@@ -12,7 +12,7 @@ public class roman {
 	@Test
 	public void display_of_zero() {
 		
-		assertEquals( "X",TDD_romanNum.convert(10));
+		assertEquals( "CDXXVII",TDD_romanNum.convert(427));
 		
 		//fail("Not yet implemented");
 	}

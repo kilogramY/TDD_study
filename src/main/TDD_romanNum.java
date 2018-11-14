@@ -7,7 +7,7 @@ public class TDD_romanNum {
 		int num = number;
 		String output="";
 
-		if (num > ArrayN[0] * 5)
+		if (num >= ArrayN[0] * 4)
 		{
 		       num = 0;
 		       output = "Number is too big";
@@ -30,11 +30,14 @@ public class TDD_romanNum {
 		                output += ArrayS[i - 1];
 		                num -= (ArrayN[i] + (ArrayN[i+1] * 4));
 		            } else {
-		               output += ArrayS[i];
-		               while( num >= ArrayN[i] + ArrayN[i + 1]){
-		                          output += ArrayS[i + 1];
-		                          num -= ArrayN[i + 1];
-		              }
+		            	if (num >= ArrayN[i]) {
+			               output += ArrayS[i];
+			               num -= ArrayN[i];
+			               while( num >= ArrayN[i] + ArrayN[i + 1]){
+			                          output += ArrayS[i + 1];
+			                          num -= ArrayN[i + 1];
+			              }
+		            	}
 		            }
 		      }
 		}
