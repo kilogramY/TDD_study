@@ -1,8 +1,7 @@
 package test;
 
 import static org.junit.Assert.*;
-import main.TDD_digit;
-import main.TDD_romanNum;
+import main.RomanNumConvert_Alex;
 
 import org.junit.Test;
 
@@ -10,28 +9,27 @@ import org.junit.Test;
 public class roman {
 
 	@Test
-	public void display_of_zero() {
+	public void convert_500() {
 		
-		assertEquals( "CDXXVII",TDD_romanNum.convert(427));
+		assertEquals( "D",RomanNumConvert_Alex.convert(500));
 		
 		//fail("Not yet implemented");
 	}
 	
 	@Test
-	public void display_of_twentyseven() {
+	public void convert_650() {
 		
-		assertEquals( "._.._.\n"
-					+ "._|..|\n" 
-					+ "|_...|",TDD_digit.display(27));
+		assertEquals( "DCL",RomanNumConvert_Alex.convert(650));
+		
 		//fail("Not yet implemented");
 	}
 	
 	@Test
-	public void display_of_sixtytwo() {
+	public void convert_4999() {
 		
-		assertEquals( "._.._.\n"
-					+ "|_.._|\n" 
-					+ "|_||_.",TDD_digit.display(62));
+		assertEquals( "MMMMCMXCIX",RomanNumConvert_Alex.convert(4999));
+		
 		//fail("Not yet implemented");
 	}
+	
 }

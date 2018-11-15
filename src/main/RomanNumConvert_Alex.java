@@ -1,13 +1,13 @@
 package main;
 
-public class TDD_romanNum {
+public class RomanNumConvert_Alex {
 	public static String convert(int number) {
 		int[] ArrayN = {1000, 500, 100, 50, 10, 5, 1};
 		char[] ArrayS = {'M', 'D', 'C', 'L', 'X', 'V', 'I'};
 		int num = number;
 		String output="";
 
-		if (num >= ArrayN[0] * 4)
+		if (num >= ArrayN[0] * 5)
 		{
 		       num = 0;
 		       output = "Number is too big";

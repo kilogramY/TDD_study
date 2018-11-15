@@ -1,6 +1,6 @@
 package main;
 
-public class TDD_digit {
+public class LCDDisplay {
 	public static String display(int number) {
 		
 		

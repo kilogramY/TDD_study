@@ -1,7 +1,7 @@
 package test;
 
 import static org.junit.Assert.*;
-import main.TDD_digit;
+import main.LCDDisplay;
 
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ public class digit {
 		
 		assertEquals( "._.\n"
 					+ "|.|\n"
-					+ "|_|",TDD_digit.display(0));
+					+ "|_|",LCDDisplay.display(0));
 		
 		//fail("Not yet implemented");
 	}
@@ -23,7 +23,7 @@ public class digit {
 		
 		assertEquals( "._.._.\n"
 					+ "._|..|\n" 
-					+ "|_...|",TDD_digit.display(27));
+					+ "|_...|",LCDDisplay.display(27));
 		//fail("Not yet implemented");
 	}
 	
@@ -32,7 +32,7 @@ public class digit {
 		
 		assertEquals( "._.._.\n"
 					+ "|_.._|\n" 
-					+ "|_||_.",TDD_digit.display(62));
+					+ "|_||_.",LCDDisplay.display(62));
 		//fail("Not yet implemented");
 	}
 }
