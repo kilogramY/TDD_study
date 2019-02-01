@@ -1,6 +1,20 @@
 package main;
 
 public class LCDDisplay {
+	
+
+	public static String display_(int i) {
+		// TODO Auto-generated method stub
+
+		if (i == 0) {
+			return "._.\n"
+				+ "|.|\n"
+				+ "|_|";
+		}
+		
+		return "";
+	}
+	
 	public static String display(int number) {
 		
 		
@@ -42,6 +56,9 @@ public class LCDDisplay {
 		
 		
 		result = String.join("\n",firstLine,secondLine,thirdLine);
+		System.out.println(result);
 		return result;
+		
 	}
+
 }

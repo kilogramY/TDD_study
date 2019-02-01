@@ -35,4 +35,22 @@ public class digit {
 					+ "|_||_.",LCDDisplay.display(62));
 		//fail("Not yet implemented");
 	}
+	
+	@Test
+	public void display_of_X() {
+		
+		assertEquals( "._.._.\n"
+					+ "|_.._|\n" 
+					+ "|_||_.",LCDDisplay.display(12345));
+		//fail("Not yet implemented");
+	}
+	
+	@Test
+	public void display_of_XX() {
+		
+		assertEquals( "._.._.\n"
+					+ "|_.._|\n" 
+					+ "|_||_.",LCDDisplay.display(395));
+		//fail("Not yet implemented");
+	}
 }
